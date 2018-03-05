@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import SVP
+import SVR
 
 
 class FirstViewModel: ViewModelProtocol {

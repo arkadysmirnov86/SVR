@@ -7,7 +7,8 @@
 //
 
 import UIKit
-import SVP
+import SVR
+
 typealias VoidClosure = () -> Void
 
 @UIApplicationMain

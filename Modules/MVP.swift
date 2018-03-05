@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import SVP
+import SVR
 
 class ThirdPresenter<T: ThirdView>: BasePresenter<T>, ThirdScreen {
 
