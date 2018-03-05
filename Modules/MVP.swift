@@ -11,12 +11,14 @@ import UIKit
 import SVR
 
 class ThirdPresenter<T: ThirdView>: BasePresenter<T>, ThirdScreen {
+    
+    var transferObj: FirstTransferObject!
 
     var params: Dictionary<AnyHashable, Any>?
     
     override func activate() {
         self.view?.onButtonTap = self.buttonTap
-        self.view?.displayUI(string: "test")
+        self.view?.displayUI(string: transferObj.value)
     }
     
     func buttonTap() {

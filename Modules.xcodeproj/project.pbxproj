@@ -26,7 +26,6 @@
 		A6A41BDE204DE93B00FEEED9 /* VoidClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A41BDD204DE93B00FEEED9 /* VoidClosure.swift */; };
 		A6A41BE0204DE9BA00FEEED9 /* MVPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A41BDF204DE9BA00FEEED9 /* MVPController.swift */; };
 		A6A41BE2204DEA1B00FEEED9 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A41BE1204DEA1B00FEEED9 /* BasePresenter.swift */; };
-		A6A41BE4204DEA5600FEEED9 /* Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A41BE3204DEA5600FEEED9 /* Wrapper.swift */; };
 		A6A41BFA204DFA6100FEEED9 /* Metatype.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A41BF8204DF9E000FEEED9 /* Metatype.swift */; };
 		A6A41BFE204DFAAF00FEEED9 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A41BFC204DFA9D00FEEED9 /* ViewModelProtocol.swift */; };
 /* End PBXBuildFile section */
@@ -77,7 +76,6 @@
 		A6A41BDD204DE93B00FEEED9 /* VoidClosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidClosure.swift; sourceTree = "<group>"; };
 		A6A41BDF204DE9BA00FEEED9 /* MVPController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPController.swift; sourceTree = "<group>"; };
 		A6A41BE1204DEA1B00FEEED9 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
-		A6A41BE3204DEA5600FEEED9 /* Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
 		A6A41BF8204DF9E000FEEED9 /* Metatype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metatype.swift; sourceTree = "<group>"; };
 		A6A41BFC204DFA9D00FEEED9 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -173,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				A6A41BDD204DE93B00FEEED9 /* VoidClosure.swift */,
-				A6A41BE3204DEA5600FEEED9 /* Wrapper.swift */,
 				A6A41BF8204DF9E000FEEED9 /* Metatype.swift */,
 			);
 			path = Utils;
@@ -319,7 +316,6 @@
 				A6A41BFA204DFA6100FEEED9 /* Metatype.swift in Sources */,
 				A6A41BD7204DE81B00FEEED9 /* BaseViewController.swift in Sources */,
 				A6A41BE2204DEA1B00FEEED9 /* BasePresenter.swift in Sources */,
-				A6A41BE4204DEA5600FEEED9 /* Wrapper.swift in Sources */,
 				A6A41BE0204DE9BA00FEEED9 /* MVPController.swift in Sources */,
 				A6A41BDE204DE93B00FEEED9 /* VoidClosure.swift in Sources */,
 				A6A41BDA204DE8D200FEEED9 /* MVVMController.swift in Sources */,

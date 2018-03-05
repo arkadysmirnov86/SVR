@@ -51,7 +51,10 @@ class FirstViewController: MVVMController<FirstViewModel>, FirstScreen {
     }
     
     @IBAction func goToThird() {
-        self.push(type: ThirdScreen.self)
+        self.push(type: ThirdScreen.self) {
+            (screen: ThirdScreen) in
+            screen.transferObj = FirstTransferObject(value: "hello world")
+        }
     }
     
 }

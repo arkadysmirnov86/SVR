@@ -43,9 +43,11 @@ open class BaseViewController: UIViewController {
 }
 
 extension BaseViewController: ScreenLoader {
-    public func push<S>(type: S.Type){
+    
+    public func push<S>(type: S.Type, beforePresent: ((S) -> Void)?){
         if let screen = Container.shared.resolveScreen(S.self) {
-            let controller = screen.configure().presentation(type: UIViewController.self)
+            beforePresent?(screen as! S)
+            let controller = screen.getPresentation().presentation(type: UIViewController.self)
             self.present(controller, animated: true, completion: {
                 
             })

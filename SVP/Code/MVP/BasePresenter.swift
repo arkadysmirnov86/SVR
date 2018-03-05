@@ -18,17 +18,13 @@ open class BasePresenter<T: MVPView>: Screen {
         
     }
     
-    weak var viewWrapper: Wrapper<T>?
+    public private (set) weak var view: T?
     
-    public var view: T? {
-        return viewWrapper?.wrapped
-    }
-    
-    public func configure() -> Presentable {
-        let configuredView = T.factoryMethod() //Container.shared.resolve(type) as! MVPView
+    public func getPresentation() -> Presentable {
+        let configuredView = T.factoryMethod() 
         configuredView.presenterStrongRef = self
         configuredView.activatePresenter = activate
-        viewWrapper = Wrapper(configuredView as! T)
+        view = configuredView as? T
         return configuredView
     }
     

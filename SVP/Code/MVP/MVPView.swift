@@ -10,6 +10,6 @@ import Foundation
 
 public protocol MVPView: AnyObject, Presentable {
     static func factoryMethod() -> MVPView
-    var presenterStrongRef: Any? {get set}
+    var presenterStrongRef: Any? { get set }
     var activatePresenter: (() -> Void)? { get set }
 }

@@ -8,9 +8,9 @@
 
 import Foundation
 
-public protocol Screen {
+public protocol Screen: class {
     static func factoryMethod() -> Screen
-    func configure() -> Presentable
+    func getPresentation() -> Presentable
     //func configure(with params: Dictionary<AnyHashable, Any>) -> Presentable
 }
 
@@ -19,6 +19,12 @@ public protocol Presentable {
 }
 
 public protocol ScreenLoader {
-    func push<S>(type: S.Type)
+    func push<S>(type: S.Type, beforePresent: ((S) -> Void)?)
+}
+
+public extension ScreenLoader {
+    func push<S>(type: S.Type) {
+        push(type: type, beforePresent: nil)
+    }
 }
 
