@@ -27,6 +27,8 @@
 		A6A41BE0204DE9BA00FEEED9 /* MVPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A41BDF204DE9BA00FEEED9 /* MVPController.swift */; };
 		A6A41BE2204DEA1B00FEEED9 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A41BE1204DEA1B00FEEED9 /* BasePresenter.swift */; };
 		A6A41BE4204DEA5600FEEED9 /* Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A41BE3204DEA5600FEEED9 /* Wrapper.swift */; };
+		A6A41BFA204DFA6100FEEED9 /* Metatype.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A41BF8204DF9E000FEEED9 /* Metatype.swift */; };
+		A6A41BFE204DFAAF00FEEED9 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A41BFC204DFA9D00FEEED9 /* ViewModelProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,12 +72,14 @@
 		A6A41BCA204DE79D00FEEED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../SVR/Info.plist; sourceTree = "<group>"; };
 		A6A41BD4204DE7DC00FEEED9 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = ../../SVR/Code/Protocols.swift; sourceTree = "<group>"; };
 		A6A41BD6204DE81B00FEEED9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ../../SVR/Code/BaseViewController.swift; sourceTree = "<group>"; };
-		A6A41BD9204DE8D200FEEED9 /* MVVMController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MVVMController.swift; path = ../../SVR/Code/MVVMController.swift; sourceTree = "<group>"; };
-		A6A41BDB204DE91800FEEED9 /* MVPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MVPView.swift; path = ../../SVR/Code/MVPView.swift; sourceTree = "<group>"; };
-		A6A41BDD204DE93B00FEEED9 /* VoidClosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VoidClosure.swift; path = ../../SVR/Code/VoidClosure.swift; sourceTree = "<group>"; };
-		A6A41BDF204DE9BA00FEEED9 /* MVPController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MVPController.swift; path = ../../SVR/Code/MVPController.swift; sourceTree = "<group>"; };
-		A6A41BE1204DEA1B00FEEED9 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BasePresenter.swift; path = ../../SVR/Code/BasePresenter.swift; sourceTree = "<group>"; };
-		A6A41BE3204DEA5600FEEED9 /* Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Wrapper.swift; path = ../../SVR/Code/Wrapper.swift; sourceTree = "<group>"; };
+		A6A41BD9204DE8D200FEEED9 /* MVVMController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMController.swift; sourceTree = "<group>"; };
+		A6A41BDB204DE91800FEEED9 /* MVPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPView.swift; sourceTree = "<group>"; };
+		A6A41BDD204DE93B00FEEED9 /* VoidClosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidClosure.swift; sourceTree = "<group>"; };
+		A6A41BDF204DE9BA00FEEED9 /* MVPController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPController.swift; sourceTree = "<group>"; };
+		A6A41BE1204DEA1B00FEEED9 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		A6A41BE3204DEA5600FEEED9 /* Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
+		A6A41BF8204DF9E000FEEED9 /* Metatype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metatype.swift; sourceTree = "<group>"; };
+		A6A41BFC204DFA9D00FEEED9 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,17 +149,43 @@
 		A6A41BD3204DE7AE00FEEED9 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				A6A41BF7204DF9C900FEEED9 /* Utils */,
+				A6A41BFB204DFA8C00FEEED9 /* MVVM */,
+				A6A41BF6204DF9A800FEEED9 /* MVP */,
 				A637BFAC2048AEE400B1C8A1 /* Container.swift */,
 				A6A41BD4204DE7DC00FEEED9 /* Protocols.swift */,
 				A6A41BD6204DE81B00FEEED9 /* BaseViewController.swift */,
-				A6A41BD9204DE8D200FEEED9 /* MVVMController.swift */,
-				A6A41BDB204DE91800FEEED9 /* MVPView.swift */,
-				A6A41BDF204DE9BA00FEEED9 /* MVPController.swift */,
-				A6A41BE1204DEA1B00FEEED9 /* BasePresenter.swift */,
-				A6A41BDD204DE93B00FEEED9 /* VoidClosure.swift */,
-				A6A41BE3204DEA5600FEEED9 /* Wrapper.swift */,
 			);
 			path = Code;
+			sourceTree = "<group>";
+		};
+		A6A41BF6204DF9A800FEEED9 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				A6A41BE1204DEA1B00FEEED9 /* BasePresenter.swift */,
+				A6A41BDB204DE91800FEEED9 /* MVPView.swift */,
+				A6A41BDF204DE9BA00FEEED9 /* MVPController.swift */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		A6A41BF7204DF9C900FEEED9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A6A41BDD204DE93B00FEEED9 /* VoidClosure.swift */,
+				A6A41BE3204DEA5600FEEED9 /* Wrapper.swift */,
+				A6A41BF8204DF9E000FEEED9 /* Metatype.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A6A41BFB204DFA8C00FEEED9 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				A6A41BD9204DE8D200FEEED9 /* MVVMController.swift */,
+				A6A41BFC204DFA9D00FEEED9 /* ViewModelProtocol.swift */,
+			);
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,12 +316,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6A41BFA204DFA6100FEEED9 /* Metatype.swift in Sources */,
 				A6A41BD7204DE81B00FEEED9 /* BaseViewController.swift in Sources */,
 				A6A41BE2204DEA1B00FEEED9 /* BasePresenter.swift in Sources */,
 				A6A41BE4204DEA5600FEEED9 /* Wrapper.swift in Sources */,
 				A6A41BE0204DE9BA00FEEED9 /* MVPController.swift in Sources */,
 				A6A41BDE204DE93B00FEEED9 /* VoidClosure.swift in Sources */,
 				A6A41BDA204DE8D200FEEED9 /* MVVMController.swift in Sources */,
+				A6A41BFE204DFAAF00FEEED9 /* ViewModelProtocol.swift in Sources */,
 				A6A41BD8204DE87A00FEEED9 /* Container.swift in Sources */,
 				A6A41BD5204DE7DC00FEEED9 /* Protocols.swift in Sources */,
 				A6A41BDC204DE91800FEEED9 /* MVPView.swift in Sources */,

@@ -9,7 +9,7 @@
 import UIKit
 
 
-open  class BaseViewController: UIViewController {
+open class BaseViewController: UIViewController {
     
     static var storyboardName: String {
         return "Main"
@@ -50,5 +50,11 @@ extension BaseViewController: ScreenLoader {
                 
             })
         }
+    }
+}
+
+extension BaseViewController: Presentable {
+    public func presentation<T>(type: T.Type) -> T {
+        return self as! T
     }
 }
