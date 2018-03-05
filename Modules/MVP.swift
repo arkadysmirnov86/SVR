@@ -12,13 +12,11 @@ import SVR
 
 class ThirdPresenter<T: ThirdView>: BasePresenter<T>, ThirdScreen {
     
-    var transferObj: FirstTransferObject!
+    var communicationObject: SomeData!
 
-    var params: Dictionary<AnyHashable, Any>?
-    
     override func activate() {
         self.view?.onButtonTap = self.buttonTap
-        self.view?.displayUI(string: transferObj.value)
+        self.view?.displayUI(string: communicationObject.value)
     }
     
     func buttonTap() {
@@ -32,12 +30,11 @@ protocol ThirdView: MVPView {
     var onButtonTap: VoidClosure? { get set }
 }
 
-
 class ThirdViewController: MVPController, ThirdView {
     
     @IBOutlet weak var label: UILabel?
     
-    @IBAction func buttonTap(){
+    @IBAction func buttonTap() {
         onButtonTap?()
     }
     
@@ -48,8 +45,3 @@ class ThirdViewController: MVPController, ThirdView {
     var onButtonTap: VoidClosure?
     
 }
-
-
-
-
-

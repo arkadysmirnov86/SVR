@@ -9,16 +9,10 @@
 import UIKit
 import SVR
 
-
-
 class StartViewController: BaseViewController {
     
     @IBAction func goToSecond() {
         push(type: FirstScreen.self)
     }
+    
 }
-
-
-
-
-
