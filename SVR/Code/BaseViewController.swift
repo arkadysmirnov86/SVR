@@ -48,9 +48,13 @@ extension BaseViewController: ScreenLoader {
         if let screen = Container.shared.resolveScreen(S.self) {
             beforePresent?(screen as! S)
             let controller = screen.getPresentation().presentation(type: UIViewController.self)
-            self.present(controller, animated: true, completion: {
-                
-            })
+            if let navcontroller = self.navigationController {
+                navcontroller.pushViewController(controller, animated: true)
+            } else {
+                self.present(controller, animated: true, completion: {
+                    
+                })
+            }
         }
     }
 }

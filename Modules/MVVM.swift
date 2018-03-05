@@ -32,7 +32,7 @@ class FirstViewModel: ViewModelProtocol {
     }
     
     func loadData() {
-        self.text = "tewtewe"
+        self.text = "Some data was loaded in ViewModel"
     }
     
 }
