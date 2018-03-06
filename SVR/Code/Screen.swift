@@ -11,5 +11,4 @@ import Foundation
 public protocol Screen: class {
     static func factoryMethod() -> Screen
     func getPresentation() -> Presentable
-    //func configure(with params: Dictionary<AnyHashable, Any>) -> Presentable
 }
