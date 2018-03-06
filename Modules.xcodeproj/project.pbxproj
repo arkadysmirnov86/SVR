@@ -156,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				A6A41BF7204DF9C900FEEED9 /* Utils */,
+				A6A41BFB204DFA8C00FEEED9 /* MVVM */,
+				A6A41BF6204DF9A800FEEED9 /* MVP */,
 				A6D7A626204F35A000249038 /* UIKit */,
 				A637BFAC2048AEE400B1C8A1 /* Container.swift */,
 				A6A41BD4204DE7DC00FEEED9 /* Presentable.swift */,
@@ -197,8 +199,6 @@
 		A6D7A626204F35A000249038 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				A6A41BFB204DFA8C00FEEED9 /* MVVM */,
-				A6A41BF6204DF9A800FEEED9 /* MVP */,
 				A6A41BD6204DE81B00FEEED9 /* BaseViewController.swift */,
 				A6D7A627204F35D700249038 /* AppManager.swift */,
 			);

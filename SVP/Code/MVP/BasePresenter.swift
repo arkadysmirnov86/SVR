@@ -32,3 +32,14 @@ open class BasePresenter<T: MVPView>: Screen {
         
     }
 }
+
+extension BasePresenter: ScreenLoader {
+    
+    public func push<S>(type: S.Type, beforePresent: ((S) -> Void)?) {
+        (self.view as? ScreenLoader)?.push(type: type, beforePresent: beforePresent)
+    }
+    
+    public var container: Container? {
+        return (self.view as? ScreenLoader)?.container
+    }
+}

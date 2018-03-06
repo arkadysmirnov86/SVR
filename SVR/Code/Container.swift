@@ -9,12 +9,11 @@
 import Foundation
 
 public class Container {
-    typealias creator = () -> Any
-    //public static var shared = Container()
-    private var container = Dictionary<AnyHashable, Any>()
+    
+    private var container: Dictionary<AnyHashable, Any>
     
     public init() {
-        
+        container = Dictionary<AnyHashable, Any>()
     }
     
     public func register<Type> (_ type: Type.Type, closure: @escaping () -> Type) {
@@ -26,7 +25,7 @@ public class Container {
     }
     
     public func resolve<T>(_ type: T.Type) -> T? {
-        return (container[Metatype(T.self)] as? creator)?() as? T
+        return (container[Metatype(T.self)] as? (() -> T))?() as? T
     }
     
     public func resolveScreen<T>(_ type: T.Type) -> Screen? {

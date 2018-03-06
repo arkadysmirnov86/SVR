@@ -39,9 +39,11 @@ class ThirdViewController: MVPController, ThirdView {
     }
     
     func displayUI(string: String) {
+        container?.resolve(SomeInjectedComponent.self)?.printHello()
         label?.text = string
     }
     
     var onButtonTap: VoidClosure?
     
 }
+

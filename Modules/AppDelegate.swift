@@ -13,11 +13,15 @@ typealias VoidClosure = () -> Void
 
 class MyAppManager: AppManager {
     
-    class DataSevice {}
-    
-    var dataService: DataSevice?  {
-        return container?.resolve(DataSevice.self)
+    var sic: SomeInjectedComponent?  {
+        return container?.resolve(SomeInjectedComponent.self)
     }
+    
+    class var shared: MyAppManager {
+        //swiftlint:disable:next force_cast
+        return (UIApplication.shared.delegate as! AppDelegate).appManager as! MyAppManager
+    }
+    
 }
 
 @UIApplicationMain
@@ -25,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WindowProvider {
 
     var window: UIWindow?
 
-    var appManager: AppManager!
+    var appManager: MyAppManager!
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
@@ -42,18 +46,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WindowProvider {
         container.registerSсreen(FirstScreen.self, as: StartViewController.self)
         container.registerSсreen(SecondScreen.self, as: SecondViewController.self)
         container.registerSсreen(ThirdScreen.self, as: ThirdPresenter<ThirdViewController>.self)
+        
+        container.register(SomeInjectedComponent.self) {
+            return SomeInjectedComponent()
+        }
+        
         return container
     }
-//    
-//    func configureDI() {
-//        Container.shared.register(FirstScreen.self, closure: {
-//            return FirstViewController.instantiate(from: UIStoryboard(name: "Main", bundle: nil))
-//        })
-//        
-//        Container.shared.register(ThirdScreen.self, closure: {
-//            return ThirdPresenter<ThirdViewController>()
-//        })
-//        
-//    }
 
+}
+
+class SomeInjectedComponent {
+    func printHello() {
+        print("hello")
+    }
 }

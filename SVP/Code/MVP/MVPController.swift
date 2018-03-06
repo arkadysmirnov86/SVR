@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 open class MVPController: BaseViewController, MVPView {
     
     public static func factoryMethod() -> MVPView {
@@ -25,3 +24,4 @@ open class MVPController: BaseViewController, MVPView {
     }
     
 }
+
