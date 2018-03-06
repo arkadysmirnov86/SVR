@@ -29,7 +29,7 @@ open class AppManager : ScreenLoader {
             beforePresent?(screen as! S)
             let controller = screen.getPresentation().presentation(type: BaseViewController.self)
             controller.container = self.container
-            self.appDelegate?.window?.set(rootViewController: controller)
+            self.appDelegate?.window?.rootViewController = controller
         }
     }
     
