@@ -68,12 +68,12 @@
 		A637BF8620489C1800B1C8A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A637BFA82048A11000B1C8A1 /* Screens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screens.swift; sourceTree = "<group>"; };
 		A637BFAA2048A1A300B1C8A1 /* MVP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP.swift; sourceTree = "<group>"; };
-		A637BFAC2048AEE400B1C8A1 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Container.swift; path = ../../SVR/Code/Container.swift; sourceTree = "<group>"; };
+		A637BFAC2048AEE400B1C8A1 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		A637BFAE2048D34200B1C8A1 /* MVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM.swift; sourceTree = "<group>"; };
 		A6A41BC7204DE79D00FEEED9 /* SVR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A41BC9204DE79D00FEEED9 /* SVR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SVR.h; path = ../SVR/SVR.h; sourceTree = "<group>"; };
 		A6A41BCA204DE79D00FEEED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../SVR/Info.plist; sourceTree = "<group>"; };
-		A6A41BD4204DE7DC00FEEED9 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Presentable.swift; path = ../../SVR/Code/Presentable.swift; sourceTree = "<group>"; };
+		A6A41BD4204DE7DC00FEEED9 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		A6A41BD6204DE81B00FEEED9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A6A41BD9204DE8D200FEEED9 /* MVVMController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMController.swift; sourceTree = "<group>"; };
 		A6A41BDB204DE91800FEEED9 /* MVPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPView.swift; sourceTree = "<group>"; };
