@@ -25,7 +25,7 @@ public class Container {
     }
     
     public func resolve<T>(_ type: T.Type) -> T? {
-        return (container[Metatype(T.self)] as? (() -> T))?() as? T
+        return (container[Metatype(T.self)] as? (() -> T))?()
     }
     
     public func resolveScreen<T>(_ type: T.Type) -> Screen? {
