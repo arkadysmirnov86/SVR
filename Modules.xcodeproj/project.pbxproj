@@ -148,8 +148,7 @@
 				A6A41BC9204DE79D00FEEED9 /* SVR.h */,
 				A6A41BCA204DE79D00FEEED9 /* Info.plist */,
 			);
-			name = SVR;
-			path = SVP;
+			path = SVR;
 			sourceTree = "<group>";
 		};
 		A6A41BD3204DE7AE00FEEED9 /* Code */ = {
