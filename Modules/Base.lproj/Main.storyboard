@@ -49,10 +49,10 @@
             </objects>
             <point key="canvasLocation" x="2506" y="55"/>
         </scene>
-        <!--first screen-->
+        <!--second screen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="FirstViewController" title="first screen" id="BYZ-38-t0r" customClass="FirstViewController" customModule="Modules" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondViewController" title="second screen" id="BYZ-38-t0r" customClass="SecondViewController" customModule="Modules" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,14 +91,14 @@
         <!--start screen-->
         <scene sceneID="mFA-w7-TZW">
             <objects>
-                <viewController title="start screen" id="3qK-N5-taf" customClass="StartViewController" customModule="Modules" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StartViewController" title="start screen" id="3qK-N5-taf" customClass="StartViewController" customModule="Modules" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WP8-BH-Wbo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdK-Of-pAQ">
-                                <rect key="frame" x="125.5" y="319" width="124" height="30"/>
-                                <state key="normal" title="Go to First Screen"/>
+                                <rect key="frame" x="114.5" y="319" width="146" height="30"/>
+                                <state key="normal" title="Go to Second Screen"/>
                                 <connections>
                                     <action selector="goToSecond" destination="3qK-N5-taf" eventType="touchUpInside" id="Tkr-WR-ySX"/>
                                 </connections>

@@ -10,10 +10,10 @@ import Foundation
 
 public class Container {
     typealias creator = () -> Any
-    public static var shared = Container()
+    //public static var shared = Container()
     private var container = Dictionary<AnyHashable, Any>()
     
-    private init() {
+    public init() {
         
     }
     

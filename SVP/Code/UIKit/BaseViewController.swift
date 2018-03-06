@@ -36,18 +36,20 @@ open class BaseViewController: UIViewController {
         return result
     }
     
-    class func instantiate(from storyboard: UIStoryboard) -> Self {
+    public class func instantiate(from storyboard: UIStoryboard) -> Self {
         return _instantiate(from: storyboard)
     }
     
+    public var container: Container?
 }
 
 extension BaseViewController: ScreenLoader {
     
     public func push<S>(type: S.Type, beforePresent: ((S) -> Void)?){
-        if let screen = Container.shared.resolveScreen(S.self) {
+        if let screen = container?.resolveScreen(S.self) {
             beforePresent?(screen as! S)
-            let controller = screen.getPresentation().presentation(type: UIViewController.self)
+            let controller = screen.getPresentation().presentation(type: BaseViewController.self)
+            controller.container = self.container
             if let navcontroller = self.navigationController {
                 navcontroller.pushViewController(controller, animated: true)
             } else {

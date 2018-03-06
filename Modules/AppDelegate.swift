@@ -11,21 +11,38 @@ import SVR
 
 typealias VoidClosure = () -> Void
 
+class MyAppManager: AppManager {
+    
+    class DataSevice {}
+    
+    var dataService: DataSevice?  {
+        return container?.resolve(DataSevice.self)
+    }
+}
+
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, WindowProvider {
 
     var window: UIWindow?
 
+    var appManager: AppManager!
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        configurePages()
+        let container = configurePages()
+        
+        appManager = MyAppManager(container: container)
+        appManager.push(type: FirstScreen.self)
         
         return true
     }
     
-    func configurePages(){
-        Container.shared.registerSсreen(FirstScreen.self, as: FirstViewController.self)
-        Container.shared.registerSсreen(ThirdScreen.self, as: ThirdPresenter<ThirdViewController>.self)
+    func configurePages() -> Container {
+        let container = Container()
+        container.registerSсreen(FirstScreen.self, as: StartViewController.self)
+        container.registerSсreen(SecondScreen.self, as: SecondViewController.self)
+        container.registerSсreen(ThirdScreen.self, as: ThirdPresenter<ThirdViewController>.self)
+        return container
     }
 //    
 //    func configureDI() {
@@ -40,4 +57,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //    }
 
 }
-

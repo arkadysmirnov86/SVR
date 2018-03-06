@@ -9,10 +9,20 @@
 import UIKit
 import SVR
 
-class StartViewController: BaseViewController {
+class StartViewController: BaseViewController, FirstScreen {
+    
+    static func factoryMethod() -> Screen {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        return self.instantiate(from: storyboard) as! Screen
+    }
+    
+    func getPresentation() -> Presentable {
+        return self
+    }
+    
     
     @IBAction func goToSecond() {
-        push(type: FirstScreen.self)
+        push(type: SecondScreen.self)
     }
     
 }

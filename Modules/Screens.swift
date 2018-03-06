@@ -18,6 +18,11 @@ protocol FirstScreen: Screen {
     
 }
 
+
+protocol SecondScreen: Screen {
+    
+}
+
 protocol ThirdScreen: Screen {
     var communicationObject: SomeData! { get set }
 }

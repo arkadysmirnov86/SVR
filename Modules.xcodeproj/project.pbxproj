@@ -18,7 +18,7 @@
 		A6A41BCB204DE79D00FEEED9 /* SVR.h in Headers */ = {isa = PBXBuildFile; fileRef = A6A41BC9204DE79D00FEEED9 /* SVR.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6A41BCE204DE79D00FEEED9 /* SVR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6A41BC7204DE79D00FEEED9 /* SVR.framework */; };
 		A6A41BCF204DE79D00FEEED9 /* SVR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6A41BC7204DE79D00FEEED9 /* SVR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A6A41BD5204DE7DC00FEEED9 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A41BD4204DE7DC00FEEED9 /* Protocols.swift */; };
+		A6A41BD5204DE7DC00FEEED9 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A41BD4204DE7DC00FEEED9 /* Presentable.swift */; };
 		A6A41BD7204DE81B00FEEED9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A41BD6204DE81B00FEEED9 /* BaseViewController.swift */; };
 		A6A41BD8204DE87A00FEEED9 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = A637BFAC2048AEE400B1C8A1 /* Container.swift */; };
 		A6A41BDA204DE8D200FEEED9 /* MVVMController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A41BD9204DE8D200FEEED9 /* MVVMController.swift */; };
@@ -28,6 +28,10 @@
 		A6A41BE2204DEA1B00FEEED9 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A41BE1204DEA1B00FEEED9 /* BasePresenter.swift */; };
 		A6A41BFA204DFA6100FEEED9 /* Metatype.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A41BF8204DF9E000FEEED9 /* Metatype.swift */; };
 		A6A41BFE204DFAAF00FEEED9 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A41BFC204DFA9D00FEEED9 /* ViewModelProtocol.swift */; };
+		A6D7A625204F2D1500249038 /* UIWindow+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7A623204F2CDA00249038 /* UIWindow+ViewController.swift */; };
+		A6D7A62D204F362E00249038 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7A629204F35FA00249038 /* Screen.swift */; };
+		A6D7A62E204F363100249038 /* ScreenLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7A62B204F361300249038 /* ScreenLoader.swift */; };
+		A6D7A62F204F363A00249038 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7A627204F35D700249038 /* AppManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,8 +73,8 @@
 		A6A41BC7204DE79D00FEEED9 /* SVR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A41BC9204DE79D00FEEED9 /* SVR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SVR.h; path = ../SVR/SVR.h; sourceTree = "<group>"; };
 		A6A41BCA204DE79D00FEEED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../SVR/Info.plist; sourceTree = "<group>"; };
-		A6A41BD4204DE7DC00FEEED9 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = ../../SVR/Code/Protocols.swift; sourceTree = "<group>"; };
-		A6A41BD6204DE81B00FEEED9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ../../SVR/Code/BaseViewController.swift; sourceTree = "<group>"; };
+		A6A41BD4204DE7DC00FEEED9 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Presentable.swift; path = ../../SVR/Code/Presentable.swift; sourceTree = "<group>"; };
+		A6A41BD6204DE81B00FEEED9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A6A41BD9204DE8D200FEEED9 /* MVVMController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMController.swift; sourceTree = "<group>"; };
 		A6A41BDB204DE91800FEEED9 /* MVPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPView.swift; sourceTree = "<group>"; };
 		A6A41BDD204DE93B00FEEED9 /* VoidClosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidClosure.swift; sourceTree = "<group>"; };
@@ -78,6 +82,10 @@
 		A6A41BE1204DEA1B00FEEED9 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		A6A41BF8204DF9E000FEEED9 /* Metatype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metatype.swift; sourceTree = "<group>"; };
 		A6A41BFC204DFA9D00FEEED9 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		A6D7A623204F2CDA00249038 /* UIWindow+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+ViewController.swift"; sourceTree = "<group>"; };
+		A6D7A627204F35D700249038 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		A6D7A629204F35FA00249038 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		A6D7A62B204F361300249038 /* ScreenLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,11 +156,11 @@
 			isa = PBXGroup;
 			children = (
 				A6A41BF7204DF9C900FEEED9 /* Utils */,
-				A6A41BFB204DFA8C00FEEED9 /* MVVM */,
-				A6A41BF6204DF9A800FEEED9 /* MVP */,
+				A6D7A626204F35A000249038 /* UIKit */,
 				A637BFAC2048AEE400B1C8A1 /* Container.swift */,
-				A6A41BD4204DE7DC00FEEED9 /* Protocols.swift */,
-				A6A41BD6204DE81B00FEEED9 /* BaseViewController.swift */,
+				A6A41BD4204DE7DC00FEEED9 /* Presentable.swift */,
+				A6D7A62B204F361300249038 /* ScreenLoader.swift */,
+				A6D7A629204F35FA00249038 /* Screen.swift */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -172,6 +180,7 @@
 			children = (
 				A6A41BDD204DE93B00FEEED9 /* VoidClosure.swift */,
 				A6A41BF8204DF9E000FEEED9 /* Metatype.swift */,
+				A6D7A623204F2CDA00249038 /* UIWindow+ViewController.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -183,6 +192,17 @@
 				A6A41BFC204DFA9D00FEEED9 /* ViewModelProtocol.swift */,
 			);
 			path = MVVM;
+			sourceTree = "<group>";
+		};
+		A6D7A626204F35A000249038 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A6A41BFB204DFA8C00FEEED9 /* MVVM */,
+				A6A41BF6204DF9A800FEEED9 /* MVP */,
+				A6A41BD6204DE81B00FEEED9 /* BaseViewController.swift */,
+				A6D7A627204F35D700249038 /* AppManager.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,16 +333,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D7A62E204F363100249038 /* ScreenLoader.swift in Sources */,
 				A6A41BFA204DFA6100FEEED9 /* Metatype.swift in Sources */,
 				A6A41BD7204DE81B00FEEED9 /* BaseViewController.swift in Sources */,
 				A6A41BE2204DEA1B00FEEED9 /* BasePresenter.swift in Sources */,
 				A6A41BE0204DE9BA00FEEED9 /* MVPController.swift in Sources */,
 				A6A41BDE204DE93B00FEEED9 /* VoidClosure.swift in Sources */,
 				A6A41BDA204DE8D200FEEED9 /* MVVMController.swift in Sources */,
+				A6D7A62F204F363A00249038 /* AppManager.swift in Sources */,
 				A6A41BFE204DFAAF00FEEED9 /* ViewModelProtocol.swift in Sources */,
 				A6A41BD8204DE87A00FEEED9 /* Container.swift in Sources */,
-				A6A41BD5204DE7DC00FEEED9 /* Protocols.swift in Sources */,
+				A6A41BD5204DE7DC00FEEED9 /* Presentable.swift in Sources */,
 				A6A41BDC204DE91800FEEED9 /* MVPView.swift in Sources */,
+				A6D7A625204F2D1500249038 /* UIWindow+ViewController.swift in Sources */,
+				A6D7A62D204F362E00249038 /* Screen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

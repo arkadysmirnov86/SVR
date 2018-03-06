@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import SVR
 
-class FirstViewModel: ViewModelProtocol {
+class SecondViewModel: ViewModelProtocol {
     
     var text: String = "" {
         didSet {
@@ -37,7 +37,7 @@ class FirstViewModel: ViewModelProtocol {
     
 }
 
-class FirstViewController: MVVMController<FirstViewModel>, FirstScreen {
+class SecondViewController: MVVMController<SecondViewModel>, SecondScreen {
     
     @IBOutlet weak var label: UILabel?
     
