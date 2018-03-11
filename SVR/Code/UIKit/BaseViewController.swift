@@ -8,15 +8,14 @@
 
 import UIKit
 
-
 open class BaseViewController: UIViewController {
     
-    static var storyboardName: String {
+    open class var storyboardName: String {
         return "Main"
     }
     
     static func factoryMethod() -> UIViewController {
-        let storyboard = UIStoryboard(name: BaseViewController.storyboardName, bundle: nil)
+        let storyboard = UIStoryboard(name: self.storyboardName, bundle: nil)
         return self.instantiate(from: storyboard)
     }
     

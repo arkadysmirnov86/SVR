@@ -49,45 +49,6 @@
             </objects>
             <point key="canvasLocation" x="2506" y="55"/>
         </scene>
-        <!--second screen-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController storyboardIdentifier="SecondViewController" title="second screen" id="BYZ-38-t0r" customClass="SecondViewController" customModule="Modules" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUZ-3X-PEf">
-                                <rect key="frame" x="166" y="323.5" width="42" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fee-Wp-VDh">
-                                <rect key="frame" x="148.5" y="384" width="77" height="30"/>
-                                <state key="normal" title="Go to Third"/>
-                                <connections>
-                                    <action selector="goToThird" destination="BYZ-38-t0r" eventType="touchUpInside" id="MYD-0D-IJ6"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="qUZ-3X-PEf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Rl-qn-9GO"/>
-                            <constraint firstItem="Fee-Wp-VDh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e3f-HL-p3D"/>
-                            <constraint firstItem="Fee-Wp-VDh" firstAttribute="top" secondItem="qUZ-3X-PEf" secondAttribute="bottom" constant="40" id="hNj-QR-QkS"/>
-                            <constraint firstItem="qUZ-3X-PEf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lUy-P9-SFV"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <connections>
-                        <outlet property="label" destination="qUZ-3X-PEf" id="Hhe-Og-9Ul"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1863" y="56"/>
-        </scene>
         <!--start screen-->
         <scene sceneID="mFA-w7-TZW">
             <objects>

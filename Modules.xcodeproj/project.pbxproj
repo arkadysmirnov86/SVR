@@ -31,6 +31,7 @@
 		A6D7A62D204F362E00249038 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7A629204F35FA00249038 /* Screen.swift */; };
 		A6D7A62E204F363100249038 /* ScreenLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7A62B204F361300249038 /* ScreenLoader.swift */; };
 		A6D7A62F204F363A00249038 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7A627204F35D700249038 /* AppManager.swift */; };
+		A6D7A6312055C38300249038 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D7A6302055C38300249038 /* Second.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		A6D7A627204F35D700249038 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		A6D7A629204F35FA00249038 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		A6D7A62B204F361300249038 /* ScreenLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenLoader.swift; sourceTree = "<group>"; };
+		A6D7A6302055C38300249038 /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				A637BFAA2048A1A300B1C8A1 /* MVP.swift */,
 				A637BFAE2048D34200B1C8A1 /* MVVM.swift */,
 				A637BF7E20489C1800B1C8A1 /* Main.storyboard */,
+				A6D7A6302055C38300249038 /* Second.storyboard */,
 				A637BF8120489C1800B1C8A1 /* Assets.xcassets */,
 				A637BF8320489C1800B1C8A1 /* LaunchScreen.storyboard */,
 				A637BF8620489C1800B1C8A1 /* Info.plist */,
@@ -297,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D7A6312055C38300249038 /* Second.storyboard in Resources */,
 				A637BF8520489C1800B1C8A1 /* LaunchScreen.storyboard in Resources */,
 				A637BF8220489C1800B1C8A1 /* Assets.xcassets in Resources */,
 				A637BF8020489C1800B1C8A1 /* Main.storyboard in Resources */,

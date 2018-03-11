@@ -41,6 +41,10 @@ class SecondViewController: MVVMController<SecondViewModel>, SecondScreen {
     
     @IBOutlet weak var label: UILabel?
     
+    override class var storyboardName: String {
+        return "Second"
+    }
+    
     override func bind() {
         viewModel?.textChanged = {
             [weak self] in
