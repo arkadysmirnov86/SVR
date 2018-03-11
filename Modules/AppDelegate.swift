@@ -18,8 +18,7 @@ class MyAppManager: AppManager {
     }
     
     class var shared: MyAppManager {
-        //swiftlint:disable:next force_cast
-        return (UIApplication.shared.delegate as! AppDelegate).appManager as! MyAppManager
+        return (UIApplication.shared.delegate as! AppDelegate).appManager
     }
     
 }

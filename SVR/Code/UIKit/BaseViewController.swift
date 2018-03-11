@@ -44,7 +44,7 @@ open class BaseViewController: UIViewController {
 
 extension BaseViewController: ScreenLoader {
     
-    public func push<S>(type: S.Type, beforePresent: ((S) -> Void)?){
+    open func push<S>(type: S.Type, beforePresent: ((S) -> Void)?){
         if let screen = container?.resolveScreen(S.self) {
             beforePresent?(screen as! S)
             let controller = screen.getPresentation().presentation(type: BaseViewController.self)
@@ -61,7 +61,7 @@ extension BaseViewController: ScreenLoader {
 }
 
 extension BaseViewController: Presentable {
-    public func presentation<T>(type: T.Type) -> T {
+    open func presentation<T>(type: T.Type) -> T {
         return self as! T
     }
 }

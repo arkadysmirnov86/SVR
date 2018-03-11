@@ -13,7 +13,7 @@ class StartViewController: BaseViewController, FirstScreen {
     
     static func factoryMethod() -> Screen {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        return self.instantiate(from: storyboard) as! Screen
+        return self.instantiate(from: storyboard)
     }
     
     func getPresentation() -> Presentable {
