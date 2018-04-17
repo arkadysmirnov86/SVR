@@ -15,6 +15,7 @@
 		A637BFA92048A11000B1C8A1 /* Screens.swift in Sources */ = {isa = PBXBuildFile; fileRef = A637BFA82048A11000B1C8A1 /* Screens.swift */; };
 		A637BFAB2048A1A300B1C8A1 /* MVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = A637BFAA2048A1A300B1C8A1 /* MVP.swift */; };
 		A637BFAF2048D34200B1C8A1 /* MVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A637BFAE2048D34200B1C8A1 /* MVVM.swift */; };
+		A6657B7D208693780002BE1F /* UIViewController+SVR.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6657B7C208693780002BE1F /* UIViewController+SVR.swift */; };
 		A6A41BCB204DE79D00FEEED9 /* SVR.h in Headers */ = {isa = PBXBuildFile; fileRef = A6A41BC9204DE79D00FEEED9 /* SVR.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6A41BCE204DE79D00FEEED9 /* SVR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6A41BC7204DE79D00FEEED9 /* SVR.framework */; };
 		A6A41BCF204DE79D00FEEED9 /* SVR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6A41BC7204DE79D00FEEED9 /* SVR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -70,6 +71,7 @@
 		A637BFAA2048A1A300B1C8A1 /* MVP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP.swift; sourceTree = "<group>"; };
 		A637BFAC2048AEE400B1C8A1 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		A637BFAE2048D34200B1C8A1 /* MVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM.swift; sourceTree = "<group>"; };
+		A6657B7C208693780002BE1F /* UIViewController+SVR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+SVR.swift"; sourceTree = "<group>"; };
 		A6A41BC7204DE79D00FEEED9 /* SVR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A41BC9204DE79D00FEEED9 /* SVR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SVR.h; path = ../SVR/SVR.h; sourceTree = "<group>"; };
 		A6A41BCA204DE79D00FEEED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../SVR/Info.plist; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 			children = (
 				A6A41BD6204DE81B00FEEED9 /* BaseViewController.swift */,
 				A6D7A627204F35D700249038 /* AppManager.swift */,
+				A6657B7C208693780002BE1F /* UIViewController+SVR.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				A6D7A62F204F363A00249038 /* AppManager.swift in Sources */,
 				A6A41BFE204DFAAF00FEEED9 /* ViewModelProtocol.swift in Sources */,
 				A6A41BD8204DE87A00FEEED9 /* Container.swift in Sources */,
+				A6657B7D208693780002BE1F /* UIViewController+SVR.swift in Sources */,
 				A6A41BD5204DE7DC00FEEED9 /* Presentable.swift in Sources */,
 				A6A41BDC204DE91800FEEED9 /* MVPView.swift in Sources */,
 				A6D7A62D204F362E00249038 /* Screen.swift in Sources */,

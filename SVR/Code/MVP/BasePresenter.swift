@@ -20,7 +20,7 @@ open class BasePresenter<T: MVPView>: Screen {
     
     public private (set) weak var view: T?
     
-    public func getPresentation() -> Presentable {
+    public var presentable: Presentable {
         let configuredView = T.factoryMethod() 
         configuredView.presenterStrongRef = self
         configuredView.activatePresenter = activate

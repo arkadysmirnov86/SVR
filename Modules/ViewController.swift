@@ -16,7 +16,7 @@ class StartViewController: BaseViewController, FirstScreen {
         return self.instantiate(from: storyboard)
     }
     
-    func getPresentation() -> Presentable {
+    var presentable: Presentable {
         return self
     }
     

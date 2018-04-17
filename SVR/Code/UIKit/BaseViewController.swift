@@ -19,35 +19,18 @@ open class BaseViewController: UIViewController {
         return self.instantiate(from: storyboard)
     }
     
-    private class var nibName: String {
-        let className = String(describing: self)
-        
-        return className.substring(to: className.index(of: "<") ?? className.endIndex)
-    }
     
-    private class func _instantiate<Controller: BaseViewController>(from storyboard: UIStoryboard) -> Controller {
-        
-        guard let result = storyboard.instantiateViewController(withIdentifier: nibName) as? Controller else {
-            let className = (String(describing: Controller.self))
-            fatalError("No controller of \(className) class with \"\(nibName)\" identifier in storyboard")
-        }
-        
-        return result
-    }
-    
-    public class func instantiate(from storyboard: UIStoryboard) -> Self {
-        return _instantiate(from: storyboard)
-    }
     
     public var container: Container?
 }
+
 
 extension BaseViewController: ScreenLoader {
     
     open func push<S>(type: S.Type, beforePresent: ((S) -> Void)?){
         if let screen = container?.resolveScreen(S.self) {
             beforePresent?(screen as! S)
-            let controller = screen.getPresentation().presentation(type: BaseViewController.self)
+            let controller = screen.presentable.presentation(type: BaseViewController.self)
             controller.container = self.container
             if let navcontroller = self.navigationController {
                 navcontroller.pushViewController(controller, animated: true)

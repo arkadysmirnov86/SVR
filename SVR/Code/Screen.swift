@@ -10,5 +10,5 @@ import Foundation
 
 public protocol Screen: class {
     static func factoryMethod() -> Screen
-    func getPresentation() -> Presentable
+    var presentable: Presentable { get }
 }

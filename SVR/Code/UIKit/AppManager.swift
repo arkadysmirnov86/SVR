@@ -27,7 +27,7 @@ open class AppManager : ScreenLoader {
     public func push<S>(type: S.Type, beforePresent: ((S) -> Void)?) {
         if let screen = container?.resolveScreen(S.self) {
             beforePresent?(screen as! S)
-            let controller = screen.getPresentation().presentation(type: BaseViewController.self)
+            let controller = screen.presentable.presentation(type: BaseViewController.self)
             controller.container = self.container
             self.appDelegate?.window?.rootViewController = controller
         }

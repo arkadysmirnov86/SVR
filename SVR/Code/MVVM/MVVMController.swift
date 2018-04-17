@@ -24,7 +24,7 @@ open class MVVMController<ViewModel: ViewModelProtocol>: BaseViewController, Scr
         viewModel?.loadData()
     }
     
-    open func getPresentation() -> Presentable {
+    open var presentable: Presentable {
         return self
     }
     
